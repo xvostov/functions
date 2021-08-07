@@ -6,6 +6,6 @@ def write_to_xlsx(file_path, data):
 
     wb = openpyxl.load_workbook(file_path)
     sh = wb.active
-    sh.append([list])
+    sh.append(data)
     wb.save(file_path)
     wb.close()
